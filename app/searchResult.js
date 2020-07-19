@@ -13,7 +13,7 @@ const SearchResult = photoSet => {
     ) {
       setPhotoArray(photoSet.photoSet.results);
     }
-  }, []);
+  }, [photoSet]);
 
   return (
     <>
@@ -21,8 +21,8 @@ const SearchResult = photoSet => {
         <div className="container myImageContainer">
           <h5>We found {photoArray.length} relevant results:</h5>
           <div className="row">
-            {photoArray.map(img => (
-              <div className="col-12 col-sm-6 col-lg-4 myImages">
+            {photoArray.map((img, index) => (
+              <div id={`img${index}`} className="col-12 col-sm-6 col-lg-4 myImages">
                 <img src={img.urls.thumb} className="img-fluid" />
                 <p>{img.alt_description} </p>
               </div>
