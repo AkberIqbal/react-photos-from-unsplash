@@ -1,0 +1,8 @@
+.myImageContainer { background: lightgrey; padding:30px; }
+.myImages { margin:auto; }
+.myImages p { margin-top:5px; }
+.myImages img { padding: inherit; }
+.photoTermInput { padding: 10px; width: 100%; }
+.errorMessage { background: lightpink; padding: 20px; margin: 20px 0; }
+h1, h4 {text-align: center;}
+h4 {padding-bottom: 20px;}
